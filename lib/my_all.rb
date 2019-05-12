@@ -1,10 +1,10 @@
 require 'pry'
 
 def my_all?(collection)
-  1 = 0
+  i = 0
   block_return_values = []
   while i < collection.length
-    block_return_values << yied(collection[i])
+    block_return_values << yield(collection[i])
     i += 1
   end
 
